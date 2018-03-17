@@ -8,7 +8,7 @@ namespace sumArrayLargeNumbers
 {
     class Program
     {
-        static long aVeryBigSum(int n, long[] ar)
+        static long aVeryBigSum( long[] ar)
         {
             // sums up array and store value in a Long data type
             long sum = 0;
@@ -26,7 +26,7 @@ namespace sumArrayLargeNumbers
             int n = Convert.ToInt32(Console.ReadLine());
             string[] ar_temp = Console.ReadLine().Split(' ');
             long[] ar = Array.ConvertAll(ar_temp, Int64.Parse);
-            long result = aVeryBigSum(n, ar);
+            long result = aVeryBigSum( ar);
             Console.WriteLine(result);
             Console.ReadLine();
         }
